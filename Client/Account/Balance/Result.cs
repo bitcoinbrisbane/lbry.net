@@ -3,22 +3,22 @@ using Newtonsoft.Json;
 
 namespace lbry.net.Account
 {
-    public partial class Result
+    public class Result
     {
         [JsonProperty("available")]
-        public string Available { get; set; }
+        public Decimal Available { get; set; }
 
         [JsonProperty("reserved")]
-        public string Reserved { get; set; }
+        public Decimal Reserved { get; set; }
 
         [JsonProperty("reserved_subtotals")]
         public ReservedSubtotals ReservedSubtotals { get; set; }
 
         [JsonProperty("total")]
-        public string Total { get; set; }
+        public Decimal Total { get; set; }
     }
 
-    public partial class ReservedSubtotals
+    public class ReservedSubtotals
     {
         [JsonProperty("claims")]
         public string Claims { get; set; }
@@ -27,6 +27,6 @@ namespace lbry.net.Account
         public string Supports { get; set; }
 
         [JsonProperty("tips")]
-        public string Tips { get; set; }
+        public Decimal Tips { get; set; }
     }
 }
