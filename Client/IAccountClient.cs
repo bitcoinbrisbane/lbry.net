@@ -6,6 +6,8 @@ namespace lbry.net
 {
     public interface IAccountClient
     {
-        Task<Account.BalanceResponse> GetAccountBalance();
+        Task<Account.BalanceResponse> GetBalance();
+
+        Task<Response<Name.Result>> GetName();
     }
 }

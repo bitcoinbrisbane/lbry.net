@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace lbry.net.Account
+namespace lbry.net.Account.Balance
 {
     public class Result
     {

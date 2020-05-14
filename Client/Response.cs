@@ -3,11 +3,11 @@ using Newtonsoft.Json;
 
 namespace lbry.net
 {
-    public class Response
+    public class Response<T>
     {
         public String JsonRPC { get; set; }
 
         [JsonProperty("result")]
-        public Object Result { get; set; }
+        public T Result { get; set; }
     }
 }

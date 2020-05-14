@@ -8,7 +8,7 @@ namespace lbry.net
         static async Task Main(string[] args)
         {
             IAccountClient client = new Client("http://localhost:5279");
-            var result = await client.GetAccountBalance();
+            var result = await client.GetBalance();
         }
     }
 }
