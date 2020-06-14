@@ -26,16 +26,16 @@ namespace lbry.net
             }
         }
 
-        public async Task<Response<Name.Result>> GetName()
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                var response = await client.PostAsync(_node, new StringContent(@"{""method"": ""account_balance"", ""params"": {}}"));
-                string json = await response.Content.ReadAsStringAsync();
+        // public async Task<Response<Name.Result>> GetName()
+        // {
+        //     using (HttpClient client = new HttpClient())
+        //     {
+        //         var response = await client.PostAsync(_node, new StringContent(@"{""method"": ""account_balance"", ""params"": {}}"));
+        //         string json = await response.Content.ReadAsStringAsync();
 
-                Account.BalanceResponse balance = Newtonsoft.Json.JsonConvert.DeserializeObject<Account.BalanceResponse>(json);
-                return balance;
-            }
-        }
+        //         Account.BalanceResponse balance = Newtonsoft.Json.JsonConvert.DeserializeObject<Account.BalanceResponse>(json);
+        //         return balance;
+        //     }
+        // }
     }
 }
