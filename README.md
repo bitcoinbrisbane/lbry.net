@@ -3,6 +3,8 @@
 
 # Example:
 
+![bitcoinbrisbane](https://circleci.com/gh/bitcoinbrisbane/lbry.net.svg?style=svg)
+
 [![bitcoinbrisbane](https://circleci.com/gh/bitcoinbrisbane/lbry.net.svg?style=svg)]
 
 
